@@ -1,0 +1,4 @@
+---
+  - name: ensure postgresql is at the latest version
+    apt: name=postgresql state=absent
+    notify: restart postgres
